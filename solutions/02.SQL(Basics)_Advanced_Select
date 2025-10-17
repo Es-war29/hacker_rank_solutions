@@ -1,0 +1,57 @@
+/* SQL(Basics)_Easy_Advanced_select */
+
+//Table: TRIANGLES
+
+| Column  | Type    |
+|---------|---------|
+| A       | INTEGER |
+| B       | INTEGER |
+| C       | INTEGER |
+
+-- 1. Write a query identifying the type of each record in the TRIANGLES table using its three side lengths.
+--  Output one of the following statements for each record in the table:
+-- Equilateral: It's a triangle with  sides of equal length.
+-- Isosceles: It's a triangle with  sides of equal length.
+-- Scalene: It's a triangle with  sides of differing lengths.
+-- Not A Triangle: The given values of A, B, and C don't form a triangle.
+-- Solution:
+SELECT 
+    CASE
+        WHEN (A + B <= C) OR (B + C <= A) OR (C + A <= B) THEN 'Not A Triangle'
+        WHEN A = B AND B = C THEN 'Equilateral'
+        WHEN A = B OR B = C OR C = A THEN 'Isosceles'
+        ELSE 'Scalene'
+    END AS triangle_type
+FROM TRIANGLES;
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+/* SQL(Basics)_Medium_Advanced_Select */
+
+
+// Table: OCCUPATIONS 
+|Column       |TYpe         |
+|-------------|-------------|
+|name         | varchar     |
+|occupation   | varchar     |
+
+//Generate the following two result sets:
+
+-- 1. Query an alphabetically ordered list of all names in OCCUPATIONS, 
+--  immediately followed by the first letter of each profession as a parenthetical (i.e.: enclosed in parentheses).
+--  For example: AnActorName(A), ADoctorName(D), AProfessorName(P), and ASingerName(S).
+
+-- 2. Query the number of occurrences of each occupation in OCCUPATIONS. Sort the occurrences in ascending order, and output them in the following format:
+-- There are a total of [occupation_count] [occupation]s.
+
+-- Solution:
+(select concat(name,'(',upper(left(OCCUPATION,1)),')') name
+from OCCUPATIONS
+ORDER BY Name);
+(select 
+concat ('There are a total of ', count(OCCUPATION),' ', lower(OCCUPATION),'s.' )
+from OCCUPATIONS
+group by OCCUPATION
+order by COUNT(Occupation)ASC , Occupation);
+
+
