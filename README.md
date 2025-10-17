@@ -7,3 +7,7 @@ This repo is for my SQL hands-on practice on hacker_rank
  
 - Skiils: SQL(Basics) | Difficulty: Easy, Medium
   - Sub Domain: Advanced Select | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/02.SQL(Basics)_Advanced_Select)
+ 
+- Skiils: SQL(Basics) | Difficulty: Easy, Medium
+  - Sub Domain: Aggregation | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/03.%20SQL(Basics)_Aggregation)
+
