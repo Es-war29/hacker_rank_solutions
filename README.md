@@ -4,3 +4,6 @@ This repo is for my SQL hands-on practice on hacker_rank
 
 - Skills: SQL(Basics) | Difficulty: Easy
   - Sub Domain: Basic Select | My Solutions: [Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/01.SQL(Basics)_Easy_Basic%20Select)
+ 
+- Skiils: SQL(Basics) | Difficulty: Easy, Medium
+  - Sub Domain: Advanced Select | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/02.SQL(Basics)_Advanced_Select)
