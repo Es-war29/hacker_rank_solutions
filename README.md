@@ -11,3 +11,8 @@ This repo is for my SQL hands-on practice on hacker_rank
 - Skiils: SQL(Basics) | Difficulty: Easy, Medium
   - Sub Domain: Aggregation | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/03.%20SQL(Basics)_Aggregation)
 
+- Skiils: SQL(Basics) | Difficulty: Medium
+  - Sub Domain: Basic Join | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/04.SQL(Basics)_Basic_Join)
+ 
+
+
