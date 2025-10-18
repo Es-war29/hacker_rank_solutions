@@ -20,3 +20,11 @@ This repo is for my SQL hands-on practice on hacker_rank
 - Skiils: SQL(Intermediate) | Difficulty: Medium
   - Sub Domain: Advanced Select | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/06.SQL(Intermediate)_Advanced_Select)
 
+- Skiils: SQL(Intermediate) | Difficulty: Medium
+  - Sub Domain: Aggreagtion | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/07.SQL(Intermediate)_Aggregation)
+ 
+
+
+
+
+
