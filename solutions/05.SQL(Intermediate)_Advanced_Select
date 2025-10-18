@@ -1,0 +1,36 @@
+/* SQL(Intermediate)_Medium_Advanced_select*/
+
+
+-- 1. Question: Link: "https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true"
+-- 2. Question: Link: "https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true"
+
+-- 1. write a query to print the company_code, founder name, total number of lead managers, total number of senior managers,
+-- total number of managers, and total number of employees. Order your output by ascending company_code.
+-- Solution:
+  SELECT f.company_code,
+         f.founder,
+         COUNT(DISTINCT lead_manager_code),
+         COUNT(DISTINCT senior_manager_code),
+         COUNT(DISTINCT manager_code),
+         COUNT(DISTINCT employee_code)
+  FROM employee as e
+  JOIN company AS f ON e.company_code = f.company_code
+  GROUP BY f.company_code, f.founder
+  ORDER BY f.company_code;
+
+
+-- 2. Write a query to find the node type of Binary Tree ordered by the value of the node. Output one of the following for each node:
+--  Root: If node is root node.
+--  Leaf: If node is leaf node.
+--  Inner: If node is neither root nor leaf node.
+-- Solution:
+  select
+      n,
+      case 
+          when p is null then 'Root'
+          when n IN (select distinct p from bst where p is not null) then  'Inner'
+          else 'Leaf'
+      end type
+  from BST
+  order by n;
+  
