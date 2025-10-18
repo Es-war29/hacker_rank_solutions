@@ -14,5 +14,6 @@ This repo is for my SQL hands-on practice on hacker_rank
 - Skiils: SQL(Basics) | Difficulty: Medium
   - Sub Domain: Basic Join | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/04.SQL(Basics)_Basic_Join)
  
-
+- Skiils: SQL(Intermediate) | Difficulty: Medium
+  - Sub Domain: Advanced Select | My Solutions:[Click Here](https://github.com/Es-war29/hacker_rank_solutions/blob/main/solutions/05.SQL(Intermediate)_Advanced_Select)
 
